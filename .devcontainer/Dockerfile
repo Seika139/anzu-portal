@@ -13,4 +13,8 @@ RUN npm install -g pnpm
 WORKDIR /workspaces/app
 
 # ユーザー設定
+USER root
+RUN apt-get update && \
+    npm install -g @anthropic-ai/claude-code @google/gemini-cli \
+    apt-get clean -y && rm -rf /var/lib/apt/lists/*
 USER node
