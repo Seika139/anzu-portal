@@ -5,7 +5,7 @@
   },
   "features": {},
   "forwardPorts": [
-    4321
+    4322
   ],
   "postCreateCommand": "npx pnpm install && bash .devcontainer/init-git-user.sh",
   "updateContentCommand": "",
